@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0063)file:///Users/julienbrunin/Downloads/calculateur_tarifs_16.html -->
+<!-- saved from url=(0063)file:///Users/julienbrunin/Downloads/calculateur_tarifs_17.html -->
 <html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -345,9 +345,9 @@
 <header>
   <div class="logo">Tarifs<span>Calculateur de prix</span></div>
   <nav id="mainNav">
-    <button class="tab-btn active" data-tab="vins"><span class="emoji">🍷</span>Vins</button>
+    <button class="tab-btn" data-tab="vins"><span class="emoji">🍷</span>Vins</button>
     <button class="tab-btn" data-tab="mousseux"><span class="emoji">🍾</span>Mousseux</button>
-    <button class="tab-btn" data-tab="alcools"><span class="emoji">🥃</span>Alcools</button>
+    <button class="tab-btn active" data-tab="alcools"><span class="emoji">🥃</span>Alcools</button>
     <button class="tab-btn" data-tab="aperitifs"><span class="emoji">🍹</span>Apéritifs</button>
     <button class="tab-btn" data-tab="bieres"><span class="emoji">🍻</span>Bières</button>
     <button class="tab-btn" data-tab="epicerie"><span class="emoji">🥘</span>Épicerie</button>
@@ -360,7 +360,7 @@
 <main>
 
 <!-- ========== VINS ========== -->
-<div class="panel active" id="panel-vins">
+<div class="panel" id="panel-vins">
   <div class="section-title">🍷 Vins</div>
   <div class="section-sub">Calcul des tarifs — Belgique &amp; France · TVA 21% / 20%</div>
 
@@ -1264,7 +1264,7 @@
 </div>
 
 <!-- ========== ALCOOLS ========== -->
-<div class="panel" id="panel-alcools">
+<div class="panel active" id="panel-alcools">
   <div class="section-title">🥃 Alcools</div>
   <div class="section-sub">Belgique &amp; Importation · TVA 21% / 20% · Accises sur degré alcool</div>
   <div class="dual-section">
@@ -1350,32 +1350,32 @@
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-1.23 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-1.48 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-1.23 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-1.48 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-1.23 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-1.48 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.75 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.50 €</div></div>
       </div>
     </div>
     <div class="result-row">
@@ -3140,13 +3140,13 @@ function calcAlcools() {
   const pvPartFrTVAC = mround((pvPart + acciseFr) * 1.2, 0.05);
   const pvPartFrHTVA = pvPartFrTVAC / 1.2;
 
-  const pvHorecaFrNet = pvHoreca - accise + acciseFr;
+  const pvHorecaFrNet = pvHoreca + acciseFr;
   const pvHorecaFrTVAC = pvHorecaFrNet * 1.2;
-  const pvGros1FrNet = pvGros1 - accise + acciseFr;
+  const pvGros1FrNet = pvGros1 + acciseFr;
   const pvGros1FrTVAC = pvGros1FrNet * 1.2;
-  const pvGros2FrNet = pvGros2 - accise + acciseFr;
+  const pvGros2FrNet = pvGros2 + acciseFr;
   const pvGros2FrTVAC = pvGros2FrNet * 1.2;
-  const pvCourtFrNet = pvCourt - accise + acciseFr;
+  const pvCourtFrNet = pvCourt + acciseFr;
   const pvCourtFrTVAC = pvCourtFrNet * 1.2;
   const pvBruninFrTVAC = (base - accise) * 1.2;
   const pvInternetTVAC = Math.round((pvPart + accise) * 1.21 * 10) / 10;
