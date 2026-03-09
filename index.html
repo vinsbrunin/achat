@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0062)file:///Users/julienbrunin/Downloads/calculateur_tarifs_7.html -->
+<!-- saved from url=(0063)file:///Users/julienbrunin/Downloads/calculateur_tarifs_16.html -->
 <html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -201,10 +201,7 @@
 
   .result-row:hover { border-color: var(--gold-dim); }
 
-  .result-row.highlight {
-    background: var(--surface);
-    border-color: var(--border);
-  }
+
 
   .result-badge {
     font-family: 'DM Mono', monospace;
@@ -254,42 +251,6 @@
     font-size: 1.05rem;
     font-weight: 500;
   }
-
-  .val-marge {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.78rem;
-    font-weight: 600;
-    min-width: 52px;
-    text-align: right;
-    align-self: center;
-    opacity: 0.9;
-    border-right: 1px solid var(--border);
-    padding-right: 0.8rem;
-    margin-right: 0.4rem;
-  }
-
-  /* Tooltip */
-  #tooltip {
-    position: fixed;
-    background: #1a1915;
-    border: 1px solid var(--gold-dim);
-    border-radius: 8px;
-    padding: 0.5rem 0.9rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.8rem;
-    color: var(--text);
-    pointer-events: none;
-    z-index: 9999;
-    white-space: nowrap;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-    opacity: 0;
-    transition: opacity 0.15s;
-  }
-  #tooltip.visible { opacity: 1; }
-  #tooltip .tip-pct { font-size: 1.1rem; font-weight: 600; }
-
-  .result-row[data-tooltip] { cursor: default; }
-  .result-row[data-tooltip]:hover { border-color: var(--gold); }
 
   .sub-header {
     font-family: 'Playfair Display', serif;
@@ -431,7 +392,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.57 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.90 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -440,7 +400,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.28 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.55 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -449,7 +408,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.19 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.44 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -458,7 +416,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.10 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.34 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -467,7 +424,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.02 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.23 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -476,7 +432,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -485,7 +440,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.54 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.85 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -494,7 +448,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -503,7 +456,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.66 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.79 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -512,7 +464,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.57 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.69 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -521,7 +472,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.49 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.58 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -530,7 +480,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -539,7 +488,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.57 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.58 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -552,7 +500,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -561,7 +508,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -570,7 +516,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.73 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -579,7 +524,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.70 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.85 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -588,7 +532,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.65 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.78 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -597,7 +540,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.03 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -606,7 +548,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.96 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.15 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -615,7 +556,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.46 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -624,7 +564,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.20 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.24 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -633,7 +572,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.17 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.21 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -642,7 +580,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.12 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.14 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -651,7 +588,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -660,7 +596,6 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.88 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -675,96 +610,96 @@
     <div class="sub-header">Magnums (basé sur les prix bouteille)</div>
     <div class="dual-section">
       <div class="country-block">
-        <div class="ctry-title">🌍 Magnum hors Belgique</div>
+        <div class="ctry-title">🇧🇪 Magnum Belgique</div>
         <div class="grid-inputs">
           <div class="input-group"><label>Contenance magnum (L)</label><input type="number" id="v-mag-be-cont" value="1.5" step="0.01" oninput="calcVins()"></div>
           <div class="input-group"><label>Prix achat magnum (€)</label><input type="number" id="v-mag-be-px" value="0" step="0.01" oninput="calcVins()"></div>
         </div>
-        <div id="v-mag-be-results" class="results-grid"><div class="result-row">
+        <div id="v-mag-be-results" class="results-grid"><div class="result-row ">
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
@@ -774,96 +709,96 @@
     </div></div>
       </div>
       <div class="country-block">
-        <div class="ctry-title">🇧🇪 Magnum Belgique</div>
+        <div class="ctry-title">🇧🇪 Magnum Importation</div>
         <div class="grid-inputs">
           <div class="input-group"><label>Contenance magnum (L)</label><input type="number" id="v-mag-imp-cont" value="1.5" step="0.01" oninput="calcVins()"></div>
           <div class="input-group"><label>Prix achat magnum (€, hors accise)</label><input type="number" id="v-mag-imp-px" value="0" step="0.01" oninput="calcVins()"></div>
         </div>
-        <div id="v-mag-imp-results" class="results-grid"><div class="result-row">
+        <div id="v-mag-imp-results" class="results-grid"><div class="result-row ">
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
@@ -890,7 +825,7 @@
       </div>
     </div>
     <div class="country-block">
-      <div class="ctry-title">🇧🇪 Achats Belgique (prix hors accise)</div>
+      <div class="ctry-title">🇧🇪 Importation (prix hors accise)</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="m-imp-cont" value="0.75" step="0.01" oninput="calcMousseux()"></div>
         <div class="input-group"><label>Prix d'achat (€, hors accise)</label><input type="number" id="m-imp-px" value="0" step="0.01" oninput="calcMousseux()"></div>
@@ -909,52 +844,46 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.23 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.70 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">3.25 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.93 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">3.03 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.66 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.80 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.39 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.58 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.12 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -963,61 +892,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.25 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.70 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.41 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.69 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.18 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.42 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.96 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.15 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">4.15 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">5.02 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -1030,52 +952,46 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.89 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.89 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.50 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.02 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.40 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.90 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.21 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.67 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.07 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.09 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -1084,61 +1000,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.92 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.92 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.65 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.78 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.56 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">4.81 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">5.82 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -1153,96 +1062,96 @@
     <div class="sub-header">Magnums</div>
     <div class="dual-section">
       <div class="country-block">
-        <div class="ctry-title">🌍 Magnum hors Belgique</div>
+        <div class="ctry-title">🇧🇪 Magnum Belgique</div>
         <div class="grid-inputs">
           <div class="input-group"><label>Contenance magnum (L)</label><input type="number" id="m-mag-be-cont" value="1.5" step="0.01" oninput="calcMousseux()"></div>
           <div class="input-group"><label>Prix achat magnum (€)</label><input type="number" id="m-mag-be-px" value="0" step="0.01" oninput="calcMousseux()"></div>
         </div>
-        <div id="m-mag-be-results" class="results-grid"><div class="result-row">
+        <div id="m-mag-be-results" class="results-grid"><div class="result-row ">
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
@@ -1252,96 +1161,96 @@
     </div></div>
       </div>
       <div class="country-block">
-        <div class="ctry-title">🇧🇪 Magnum Belgique</div>
+        <div class="ctry-title">🇧🇪 Magnum Importation</div>
         <div class="grid-inputs">
           <div class="input-group"><label>Contenance magnum (L)</label><input type="number" id="m-mag-imp-cont" value="1.5" step="0.01" oninput="calcMousseux()"></div>
           <div class="input-group"><label>Prix achat magnum (€, hors accise)</label><input type="number" id="m-mag-imp-px" value="0" step="0.01" oninput="calcMousseux()"></div>
         </div>
-        <div id="m-mag-imp-results" class="results-grid"><div class="result-row">
+        <div id="m-mag-imp-results" class="results-grid"><div class="result-row ">
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">—</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
         
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">—</div></div>
       </div>
-    </div><div class="result-row">
+    </div><div class="result-row ">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
@@ -1368,7 +1277,7 @@
       </div>
     </div>
     <div class="country-block">
-      <div class="ctry-title">🇧🇪 Achats Belgique</div>
+      <div class="ctry-title">📦 Importation</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="al-imp-cont" value="0.7" step="0.01" oninput="calcAlcools()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="al-imp-px" value="0" step="0.01" oninput="calcAlcools()"></div>
@@ -1385,54 +1294,48 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.35 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.10 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">9.98 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">12.08 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.46 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.96 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -1441,61 +1344,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.17 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.60 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-1.23 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-1.48 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-1.23 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-1.48 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-1.23 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-1.48 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.30 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.36 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.35 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.10 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -1506,54 +1402,48 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.93 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.87 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.05 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.80 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">9.36 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -1562,61 +1452,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.08 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.10 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.24 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.28 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.30 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.36 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.36 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.43 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.49 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.58 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-7.76 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-9.31 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -1633,15 +1516,15 @@
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="ap-be-cont" value="0.75" step="0.01" oninput="calcAperitifs()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="ap-be-px" value="0" step="0.01" oninput="calcAperitifs()"></div>
-        <div class="input-group"><label>Degré alcool (°)</label><input type="number" id="ap-be-deg" value="40" step="0.1" oninput="calcAperitifs()"></div>
+        <div class="input-group"><label>Degré alcool (°)</label><input type="number" id="ap-be-deg" value="18" step="0.1" oninput="calcAperitifs()"></div>
       </div>
     </div>
     <div class="country-block">
-      <div class="ctry-title">🇧🇪 Achats Belgique</div>
+      <div class="ctry-title">📦 Importation</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="ap-imp-cont" value="0.75" step="0.01" oninput="calcAperitifs()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="ap-imp-px" value="0" step="0.01" oninput="calcAperitifs()"></div>
-        <div class="input-group"><label>Degré alcool (°)</label><input type="number" id="ap-imp-deg" value="40" step="0.1" oninput="calcAperitifs()"></div>
+        <div class="input-group"><label>Degré alcool (°)</label><input type="number" id="ap-imp-deg" value="18" step="0.1" oninput="calcAperitifs()"></div>
       </div>
     </div>
   </div>
@@ -1654,54 +1537,48 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.88 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.27 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.73 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.09 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.91 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.29 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -1710,61 +1587,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.50 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.09 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.31 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.94 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -1775,54 +1645,48 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.24 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.07 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.29 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.21 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.93 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.80 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.97 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.27 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.73 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -1831,61 +1695,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.60 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.90 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.46 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.75 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.39 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.67 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.32 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.59 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.19 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.43 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.51 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.62 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.24 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -1901,128 +1758,115 @@
     <div class="grid-inputs">
       <div class="input-group"><label>Contenance (L)</label><input type="number" id="bi-cont" value="0.33" step="0.01" oninput="calcBieres()"></div>
       <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="bi-px" value="0" step="0.01" oninput="calcBieres()"></div>
-      <div class="input-group"><label>Degré alcool (°)</label><input type="number" id="bi-deg" value="40" step="0.1" oninput="calcBieres()"></div>
-      <div class="input-group"><label>Degrés Plato</label><input type="number" id="bi-plato" value="0" step="0.5" oninput="calcBieres()"></div>
+      <div class="input-group"><label>Degré alcool (°)</label><input type="number" id="bi-deg" value="6.7" step="0.1" oninput="calcBieres()"></div>
+      <div class="input-group"><label>Degrés Plato</label><input type="number" id="bi-plato" value="20" step="0.5" oninput="calcBieres()"></div>
     </div>
   </div>
   <div class="results-title">TARIFS CALCULÉS</div>
-  <div id="bi-info" class="info-pills-row"><span class="info-pill">Accise Belg. <strong>0.00 €</strong></span><span class="info-pill">Accise France <strong>1.01 €</strong></span><span class="info-pill">Base coût <strong>0.14 €</strong></span></div>
+  <div id="bi-info" class="info-pills-row"><span class="info-pill">Accise Belg. <strong>0.13 €</strong></span><span class="info-pill">Accise France <strong>0.17 €</strong></span><span class="info-pill">Base coût <strong>0.27 €</strong></span></div>
   <div id="bi-results" class="results-grid">
     <div class="result-row">
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.24 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.23 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.22 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.36 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.21 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.20 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.31 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.38 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.39 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.31 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.38 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.17 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.45 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.44 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.43 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.41 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.42 €</div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.14 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.17 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.24 €</div></div>
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
       </div>
     </div></div>
 </div>
@@ -2045,54 +1889,48 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.51 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.29 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.35 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -2101,61 +1939,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.52 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.40 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.48 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.28 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.34 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.91 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.11 €</div></div>
-        
       </div>
     </div></div>
 </div>
@@ -2189,117 +2020,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.91 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.10 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.73 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.68 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.82 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.63 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.76 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.58 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.56 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.51 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.61 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.46 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.90 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.09 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -2310,117 +2128,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.49 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.80 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.25 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.51 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.18 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.43 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.11 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.35 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.98 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.19 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.18 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.22 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.25 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.08 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.29 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.01 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.21 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.94 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.81 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.97 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.18 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.22 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.49 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.80 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -2440,7 +2245,7 @@
       </div>
     </div>
     <div class="country-block">
-      <div class="ctry-title">🇧🇪 Achats Belgique (hors accise)</div>
+      <div class="ctry-title">🇧🇪 Importation (hors accise)</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="vna-imp-cont" value="0.75" step="0.01" oninput="calcVinsNA()"></div>
         <div class="input-group"><label>Prix d'achat (€, hors accise)</label><input type="number" id="vna-imp-px" value="0" step="0.01" oninput="calcVinsNA()"></div>
@@ -2458,52 +2263,46 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.66 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.44 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.54 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.50 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.29 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.35 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -2512,61 +2311,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.52 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.51 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.36 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.33 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.28 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.34 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.55 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -2579,52 +2371,46 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.09 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.10 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.08 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.10 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.03 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
@@ -2633,61 +2419,54 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.05 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.05 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.06 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.07 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.01 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.01 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.01 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.01 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.11 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.13 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -2708,7 +2487,7 @@
       </div>
     </div>
     <div class="country-block">
-      <div class="ctry-title">🇧🇪 Achats Belgique</div>
+      <div class="ctry-title">📦 Importation</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="ana-imp-cont" value="0.5" step="0.01" oninput="calcAlcoolsNA()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="ana-imp-px" value="0" step="0.01" oninput="calcAlcoolsNA()"></div>
@@ -2727,115 +2506,102 @@
       <div class="result-vals">
         <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.57 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.40 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.54 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.65 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.44 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.53 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -2846,117 +2612,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.62 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.75 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.58 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.71 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.54 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.66 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.57 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.62 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.75 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.59 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.55 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.66 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.56 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €</div></div>
-        
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
-        
       </div>
     </div></div>
     </div>
@@ -2973,44 +2726,39 @@ const fmt = n => isNaN(n) || !isFinite(n) ? '—' : n.toFixed(2) + ' €';
 const mround = (n, m) => Math.round(n / m) * m;
 
 const TARIFS = [
-  { id: 4, label: 'PV PART', highlight: true },
+  { id: 4, label: 'PV PART' },
   { id: 5, label: 'PV HORECA' },
   { id: 6, label: 'PV GROS 1' },
   { id: 7, label: 'PV GROS 2' },
   { id: 8, label: 'COURTAGE' },
   { id: 9, label: 'PA France' },
-  { id: 10, label: 'PV PART France', highlight: true },
+  { id: 10, label: 'PV PART France' },
   { id: 11, label: 'PV HORECA France' },
   { id: 12, label: 'PV GROS 1 France' },
   { id: 13, label: 'PV GROS 2 France' },
   { id: 14, label: 'PV COURTAGE France' },
   { id: 15, label: 'PV BRUNIN France' },
-  { id: 16, label: 'PV INTERNET', highlight: true },
+  { id: 16, label: 'PV INTERNET' },
 ];
 
-function renderResults(containerId, rows, infoId, infoPills, pxBase) {
+function renderResults(containerId, rows, infoId, infoPills) {
   const c = $(containerId);
   if (!c) return;
   c.innerHTML = rows.map(r => {
-    let marge = '';
-    if (pxBase > 0 && r.tvac && isFinite(r.tvac)) {
-      const pct = ((r.tvac - pxBase) / pxBase * 100);
-      const sign = pct >= 0 ? '+' : '';
-      const color = pct >= 50 ? '#5a9e6f' : pct >= 20 ? '#c9a84c' : '#c0513a';
-      marge = `<div class="val-col"><div class="val-label">MARGE</div><div class="val-num" style="color:${color}">${sign}${pct.toFixed(1)}%</div></div>`;
-    }
+    const isFr = r.label && r.label.includes('France');
+    const rate = isFr ? 1.2 : 1.21;
+    const htva = (r.htva !== undefined && isFinite(r.htva)) ? r.htva : (r.tvac / rate);
     return `
     <div class="result-row">
       <div class="result-badge">${r.id}</div>
       <div class="result-label">${r.label}</div>
       <div class="result-vals">
-        ${r.htva !== undefined ? `<div class="val-col"><div class="val-label">HTVA</div><div class="val-num">${fmt(r.htva)}</div></div>` : ''}
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">${fmt(htva)}</div></div>
         <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">${fmt(r.tvac)}</div></div>
-        ${marge}
       </div>
     </div>`;
   }).join('');
-  
+
   if (infoId && infoPills) {
     $(infoId).innerHTML = infoPills.map(p => `<span class="info-pill">${p.label} <strong>${fmt(p.val)}</strong></span>`).join('');
   }
@@ -3095,19 +2843,19 @@ function calcVins() {
   const pvInternetTVAC = (pvInternetHTVA + accise) * 1.21;
 
   const rows = [
-    { id: 4, label: 'PV PART', htva: pvPartHTVA, tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', htva: pvPartHTVA, tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', htva: pvHorecaNet + accise, tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', htva: pvGros1Net + accise, tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', htva: pvGros2Net + accise, tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', htva: pvCourtNet + accise, tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', htva: paFrNet + acciseFr, tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', htva: pvHorecaFrHTVA, tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', htva: pvGros1FrHTVA, tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', htva: pvGros2FrHTVA, tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', htva: pvCourtFrHTVA, tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', htva: pvBruninNet, tvac: pvBruninFrTVAC },
-    { id: 16, label: 'PV INTERNET', htva: pvInternetHTVA, tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', htva: pvInternetHTVA, tvac: pvInternetTVAC },
   ];
 
   renderResults('v-be-results', rows, 'v-be-info', [
@@ -3133,7 +2881,7 @@ function calcVins() {
   const pvPartI_HTVA = pvPartI_TVAC / 1.21;
   const pvPartI_netHTVA = pvPartI_HTVA - acciseI;
 
-  // HORECA import (row 5) = K11=K10, same as PART
+  // HORECA import (row 5 = same as part)
   const pvHorecaI_HTVA = pvPartI_HTVA;
   const pvHorecaI_TVAC = pvHorecaI_HTVA * 1.21;
 
@@ -3191,19 +2939,19 @@ function calcVins() {
   const pvInternetI_TVAC = (pvInternetI_HTVA + acciseI) * 1.21;
 
   const rowsI = [
-    { id: 4, label: 'PV PART', htva: pvPartI_HTVA, tvac: pvPartI_TVAC, highlight: true },
+    { id: 4, label: 'PV PART', htva: pvPartI_HTVA, tvac: pvPartI_TVAC },
     { id: 5, label: 'PV HORECA', htva: pvHorecaI_HTVA, tvac: pvHorecaI_TVAC },
     { id: 6, label: 'PV GROS 1', htva: pvGros1I_HTVA, tvac: pvGros1I_TVAC },
     { id: 7, label: 'PV GROS 2', htva: pvGros2I_HTVA, tvac: pvGros2I_TVAC },
     { id: 8, label: 'COURTAGE', htva: pvCourtI_HTVA, tvac: pvCourtI_TVAC },
     { id: 9, label: 'PA France', htva: paFrI_HTVA, tvac: paFrI_TVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC },
     { id: 11, label: 'PV HORECA France', htva: pvHorecaFrI_HTVA, tvac: pvHorecaFrI_TVAC },
     { id: 12, label: 'PV GROS 1 France', htva: pvGros1FrI_HTVA, tvac: pvGros1FrI_TVAC },
     { id: 13, label: 'PV GROS 2 France', htva: pvGros2FrI_HTVA, tvac: pvGros2FrI_TVAC },
     { id: 14, label: 'PV COURTAGE France', htva: pvCourtFrI_HTVA, tvac: pvCourtFrI_TVAC },
     { id: 15, label: 'PV BRUNIN France', htva: pvBruninI_net, tvac: pvBruninI_TVAC },
-    { id: 16, label: 'PV INTERNET', htva: pvInternetI_HTVA, tvac: pvInternetI_TVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', htva: pvInternetI_HTVA, tvac: pvInternetI_TVAC },
   ];
 
   renderResults('v-imp-results', rowsI, 'v-imp-info', [
@@ -3227,7 +2975,7 @@ function renderMagnumResults(containerId, baseRows, ratio, cont, type) {
   c.innerHTML = baseRows.map(r => {
     const tvac = r.tvac * ratio;
     const htva = r.htva ? r.htva * ratio : undefined;
-    return `<div class="result-row">
+    return `<div class="result-row ">
       <div class="result-badge">${r.id}</div>
       <div class="result-label">${r.label}</div>
       <div class="result-vals">
@@ -3292,19 +3040,19 @@ function calcMousseux() {
   const pvInternetTVAC = (pvPartHTVA + accise) * 1.21;
 
   const rows = [
-    { id: 4, label: 'PV PART', htva: pvPartHTVA, tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', htva: pvPartHTVA, tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninTVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC },
   ];
 
   renderResults('m-be-results', rows, 'm-be-info', [
@@ -3338,19 +3086,19 @@ function calcMousseux() {
   const pvPartFrI_HTVA = pvPartFrI_TVAC / 1.2;
 
   const rowsI = [
-    { id: 4, label: 'PV PART', htva: pvPartI_HTVA, tvac: pvPartI_TVAC, highlight: true },
+    { id: 4, label: 'PV PART', htva: pvPartI_HTVA, tvac: pvPartI_TVAC },
     { id: 5, label: 'PV HORECA', tvac: pvPartI_TVAC }, // same as part in import
     { id: 6, label: 'PV GROS 1', tvac: pvGros1I_TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2I_TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtI_TVAC },
     { id: 9, label: 'PA France', tvac: paFrI_TVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvPartFrI_TVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: (pvGros1I_HTVA2 - acciseI + acciseFrI) * 1.2 },
     { id: 13, label: 'PV GROS 2 France', tvac: (pvGros2I_HTVA - acciseI + acciseFrI) * 1.2 },
     { id: 14, label: 'PV COURTAGE France', tvac: (pvCourtI_HTVA - acciseI + acciseFrI) * 1.2 },
     { id: 15, label: 'PV BRUNIN France', tvac: (base2 - acciseI) * 1.2 },
-    { id: 16, label: 'PV INTERNET', tvac: (pvPartI_HTVA + acciseI) * 1.21, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: (pvPartI_HTVA + acciseI) * 1.21 },
   ];
 
   renderResults('m-imp-results', rowsI, 'm-imp-info', [
@@ -3404,19 +3152,19 @@ function calcAlcools() {
   const pvInternetTVAC = Math.round((pvPart + accise) * 1.21 * 10) / 10;
 
   const rows = [
-    { id: 4, label: 'PV PART', tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrTVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC },
   ];
 
   renderResults('al-be-results', rows, 'al-be-info', [
@@ -3456,19 +3204,19 @@ function calcAlcools() {
   const pvInternetI_TVAC = Math.round(pvPartI_HTVA * 1.21 * 10) / 10;
 
   const rowsI = [
-    { id: 4, label: 'PV PART', tvac: pvPartI_TVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartI_TVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaI_TVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1I_TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2I_TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtI_TVAC },
     { id: 9, label: 'PA France', tvac: paFrI_TVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrI_TVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrI_TVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrI_TVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrI_TVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrI_TVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetI_TVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetI_TVAC },
   ];
 
   renderResults('al-imp-results', rowsI, 'al-imp-info', [
@@ -3511,19 +3259,19 @@ function calcAperitifs() {
   const pvInternetTVAC = (pvPart + accise) * 1.21;
 
   const rows = [
-    { id: 4, label: 'PV PART', tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrTVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC },
   ];
 
   renderResults('ap-be-results', rows, 'ap-be-info', [
@@ -3561,19 +3309,19 @@ function calcAperitifs() {
   const pvInternetI_TVAC = pvPartI_TVAC;
 
   const rowsI = [
-    { id: 4, label: 'PV PART', tvac: pvPartI_TVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartI_TVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaI_TVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1I_TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2I_TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtI_TVAC },
     { id: 9, label: 'PA France', tvac: paFrI_TVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrI_TVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrI_TVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrI_TVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrI_TVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrI_TVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetI_TVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetI_TVAC },
   ];
 
   renderResults('ap-imp-results', rowsI, 'ap-imp-info', [
@@ -3617,19 +3365,19 @@ function calcBieres() {
   const pvInternetTVAC = (pvPart + accise) * 1.21;
 
   const rows = [
-    { id: 4, label: 'PV PART', tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrTVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC },
   ];
 
   renderResults('bi-results', rows, 'bi-info', [
@@ -3669,19 +3417,19 @@ function calcEpicerie() {
   const pvInternetTVAC = (pvPart + 0.749086 * cont) * 1.06; // with accise approx
 
   const rows = [
-    { id: 4, label: 'PV PART', tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrTVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC },
   ];
 
   renderResults('ep-results', rows, 'ep-info', [
@@ -3741,19 +3489,19 @@ function calcMousseux85() {
   const pvInternetTVAC = (pvPartNet + accise) * 1.21;
 
   const rows85 = [
-    { id: 4, label: 'PV PART', tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrTVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC },
   ];
 
   renderResults('m85-results', rows85, 'm85-info', [
@@ -3790,19 +3538,19 @@ function calcMousseux85() {
   const pvInternetC_TVAC = pvPartC_TVAC;
 
   const rowsC = [
-    { id: 4, label: 'PV PART', tvac: pvPartC_TVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartC_TVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaC_TVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1C_TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2C_TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtC_TVAC },
     { id: 9, label: 'PA France', tvac: paFrC_TVAC },
-    { id: 10, label: 'PV PART France', tvac: pvPartFrC_TVAC, highlight: true },
+    { id: 10, label: 'PV PART France', tvac: pvPartFrC_TVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrC_TVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrC_TVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrC_TVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrC_TVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrC_TVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetC_TVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetC_TVAC },
   ];
 
   renderResults('ci-results', rowsC, 'ci-info', [
@@ -3859,19 +3607,19 @@ function calcVinsNA() {
   const pvInternetTVAC = (pvPartNet + accise) * 1.06;
 
   const rows = [
-    { id: 4, label: 'PV PART', htva: pvPartHTVA, tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', htva: pvPartHTVA, tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrHTVA, tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrTVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC },
   ];
 
   renderResults('vna-be-results', rows, 'vna-be-info', [
@@ -3911,19 +3659,19 @@ function calcVinsNA() {
   const pvInternetI_TVAC = (pvPartI_HTVA + acciseI) * 1.06;
 
   const rowsI = [
-    { id: 4, label: 'PV PART', htva: pvPartI_HTVA, tvac: pvPartI_TVAC, highlight: true },
+    { id: 4, label: 'PV PART', htva: pvPartI_HTVA, tvac: pvPartI_TVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaI_TVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1I_TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2I_TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtI_TVAC },
     { id: 9, label: 'PA France', tvac: paFrI_TVAC },
-    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC, highlight: true },
+    { id: 10, label: 'PV PART France', htva: pvPartFrI_HTVA, tvac: pvPartFrI_TVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrI_TVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrI_TVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrI_TVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrI_TVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrI_TVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetI_TVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetI_TVAC },
   ];
 
   renderResults('vna-imp-results', rowsI, 'vna-imp-info', [
@@ -3963,19 +3711,19 @@ function calcAlcoolsNA() {
   const pvInternetTVAC = Math.round((pvPart + accise) * 1.06 * 10) / 10;
 
   const rows = [
-    { id: 4, label: 'PV PART', htva: pvPart_HTVA, tvac: pvPartTVAC, highlight: true },
+    { id: 4, label: 'PV PART', htva: pvPart_HTVA, tvac: pvPartTVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaTVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtTVAC },
     { id: 9, label: 'PA France', tvac: paFrTVAC },
-    { id: 10, label: 'PV PART France', tvac: pvPartFrTVAC, highlight: true },
+    { id: 10, label: 'PV PART France', tvac: pvPartFrTVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrTVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrTVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrTVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrTVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrTVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetTVAC },
   ];
 
   renderResults('ana-be-results', rows, 'ana-be-info', [
@@ -4012,19 +3760,19 @@ function calcAlcoolsNA() {
   const pvInternetI_TVAC = Math.round(pvPartI_HTVA * 1.06 * 10) / 10;
 
   const rowsI = [
-    { id: 4, label: 'PV PART', tvac: pvPartI_TVAC, highlight: true },
+    { id: 4, label: 'PV PART', tvac: pvPartI_TVAC },
     { id: 5, label: 'PV HORECA', tvac: pvHorecaI_TVAC },
     { id: 6, label: 'PV GROS 1', tvac: pvGros1I_TVAC },
     { id: 7, label: 'PV GROS 2', tvac: pvGros2I_TVAC },
     { id: 8, label: 'COURTAGE', tvac: pvCourtI_TVAC },
     { id: 9, label: 'PA France', tvac: paFrI_TVAC },
-    { id: 10, label: 'PV PART France', tvac: pvPartFrI_TVAC, highlight: true },
+    { id: 10, label: 'PV PART France', tvac: pvPartFrI_TVAC },
     { id: 11, label: 'PV HORECA France', tvac: pvHorecaFrI_TVAC },
     { id: 12, label: 'PV GROS 1 France', tvac: pvGros1FrI_TVAC },
     { id: 13, label: 'PV GROS 2 France', tvac: pvGros2FrI_TVAC },
     { id: 14, label: 'PV COURTAGE France', tvac: pvCourtFrI_TVAC },
     { id: 15, label: 'PV BRUNIN France', tvac: pvBruninFrI_TVAC },
-    { id: 16, label: 'PV INTERNET', tvac: pvInternetI_TVAC, highlight: true },
+    { id: 16, label: 'PV INTERNET', tvac: pvInternetI_TVAC },
   ];
 
   renderResults('ana-imp-results', rowsI, 'ana-imp-info', [
@@ -4057,64 +3805,6 @@ function toggleMagnum(type) {
   }
 }
 
-function renderResults(containerId, rows, infoId, infoPills, pxBase) {
-  const c = $(containerId);
-  if (!c) return;
-  const clickable = pxBase > 0;
-  c.innerHTML = rows.map(r => {
-    const hasMarge = clickable && r.tvac && isFinite(r.tvac);
-    const pct = hasMarge ? ((r.tvac - pxBase) / pxBase * 100) : 0;
-    const color = pct >= 50 ? '#5a9e6f' : pct >= 20 ? '#c9a84c' : '#c0513a';
-    const clickAttr = hasMarge
-      ? `onclick="showMarge('${r.label}', ${r.tvac.toFixed(4)}, ${pxBase.toFixed(4)}, ${(r.htva||r.tvac).toFixed(4)})" style="cursor:pointer"`
-      : '';
-    const hint = hasMarge ? `<div class="marge-hint" style="color:${color}">▶ marge</div>` : '';
-    return `
-    <div class="result-row" ${clickAttr}>
-      <div class="result-badge">${r.id}</div>
-      <div class="result-label">${r.label}</div>
-      <div class="result-vals">
-        ${r.htva !== undefined ? `<div class="val-col"><div class="val-label">HTVA</div><div class="val-num">${fmt(r.htva)}</div></div>` : ''}
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">${fmt(r.tvac)}</div></div>
-        ${hint}
-      </div>
-    </div>`;
-  }).join('');
-
-  if (infoId && infoPills) {
-    $(infoId).innerHTML = infoPills.map(p => `<span class="info-pill">${p.label} <strong>${fmt(p.val)}</strong></span>`).join('');
-  }
-}
-
-function showMarge(label, tvac, pxBase, htva) {
-  const pct = (tvac - pxBase) / pxBase * 100;
-  const margeEur = tvac - pxBase;
-  const coeff = tvac / pxBase;
-  const color = pct >= 50 ? '#5a9e6f' : pct >= 20 ? '#c9a84c' : '#c0513a';
-  const sign = pct >= 0 ? '+' : '';
-
-  $('modal-title').textContent = label;
-  $('modal-body').innerHTML = `
-    <div class="modal-row"><span class="modal-lbl">Prix d'achat</span><span class="modal-val">${fmt(pxBase)}</span></div>
-    <div class="modal-row"><span class="modal-lbl">Prix de vente TVA C</span><span class="modal-val">${fmt(tvac)}</span></div>
-    <div class="modal-divider"></div>
-    <div class="modal-row"><span class="modal-lbl">Marge brute (€)</span><span class="modal-val" style="color:${color}">${sign}${fmt(margeEur)}</span></div>
-    <div class="modal-row"><span class="modal-lbl">Marge (%)</span><span class="modal-val big" style="color:${color}">${sign}${pct.toFixed(1)} %</span></div>
-    <div class="modal-row"><span class="modal-lbl">Coefficient multiplicateur</span><span class="modal-val">× ${coeff.toFixed(3)}</span></div>
-    <div class="modal-divider"></div>
-    <div class="modal-note">La marge est calculée par rapport au prix d'achat TVAC saisi.<br>Marge = (PV TVA C − PA) ÷ PA × 100</div>
-  `;
-  $('modal-overlay').classList.add('open');
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  $('modal-overlay').addEventListener('click', e => {
-    if (e.target === $('modal-overlay') || e.target.id === 'modal-close') {
-      $('modal-overlay').classList.remove('open');
-    }
-  });
-});
-
 // Init all
 calcVins();
 calcMousseux();
@@ -4126,113 +3816,6 @@ calcMousseux85();
 calcVinsNA();
 calcAlcoolsNA();
 </script>
-
-<!-- MODAL -->
-<div id="modal-overlay">
-  <div id="modal-box">
-    <div id="modal-header">
-      <div id="modal-title"></div>
-      <button id="modal-close">✕</button>
-    </div>
-    <div id="modal-body"></div>
-  </div>
-</div>
-
-<style>
-  .marge-hint {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    opacity: 0.7;
-    margin-left: 0.3rem;
-    align-self: center;
-  }
-  .result-row[onclick]:hover {
-    border-color: var(--gold);
-    background: var(--surface2);
-  }
-
-  #modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(4px);
-  }
-  #modal-overlay.open { display: flex; }
-
-  #modal-box {
-    background: var(--surface);
-    border: 1px solid var(--gold-dim);
-    border-radius: 14px;
-    width: 380px;
-    max-width: 90vw;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-    overflow: hidden;
-  }
-
-  #modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.2rem 1.5rem;
-    border-bottom: 1px solid var(--border);
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    color: var(--gold);
-  }
-
-  #modal-close {
-    background: none;
-    border: none;
-    color: var(--text-dim);
-    cursor: pointer;
-    font-size: 1rem;
-    line-height: 1;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    transition: color 0.2s;
-  }
-  #modal-close:hover { color: var(--text); }
-
-  #modal-body { padding: 1.2rem 1.5rem 1.5rem; }
-
-  .modal-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 0.45rem 0;
-  }
-  .modal-lbl {
-    font-size: 0.8rem;
-    color: var(--text-dim);
-  }
-  .modal-val {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.9rem;
-    color: var(--text);
-  }
-  .modal-val.big {
-    font-size: 1.4rem;
-    font-weight: 600;
-  }
-  .modal-divider {
-    height: 1px;
-    background: var(--border);
-    margin: 0.6rem 0;
-  }
-  .modal-note {
-    font-size: 0.72rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-top: 0.8rem;
-    font-family: 'DM Mono', monospace;
-  }
-</style>
 
 
 </body></html>
