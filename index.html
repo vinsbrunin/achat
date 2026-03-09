@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0063)file:///Users/julienbrunin/Downloads/calculateur_tarifs_17.html -->
+<!-- saved from url=(0063)file:///Users/julienbrunin/Downloads/calculateur_tarifs_19.html -->
 <html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -338,6 +338,25 @@
 
   .magnum-section { display: none; }
   .magnum-section.visible { display: block; }
+
+  .copy-val-btn {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.35rem;
+    padding: 0 0.25rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: var(--gold-dim);
+    font-size: 0.7rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s, color 0.15s;
+    vertical-align: middle;
+  }
+  .result-row:hover .copy-val-btn { opacity: 1; }
+  .copy-val-btn:hover { color: var(--gold); border-color: var(--gold-dim); }
+  .copy-val-btn.copied { color: #5a9e6f; opacity: 1; }
 </style>
 </head>
 <body>
@@ -345,9 +364,9 @@
 <header>
   <div class="logo">Tarifs<span>Calculateur de prix</span></div>
   <nav id="mainNav">
-    <button class="tab-btn" data-tab="vins"><span class="emoji">🍷</span>Vins</button>
+    <button class="tab-btn active" data-tab="vins"><span class="emoji">🍷</span>Vins</button>
     <button class="tab-btn" data-tab="mousseux"><span class="emoji">🍾</span>Mousseux</button>
-    <button class="tab-btn active" data-tab="alcools"><span class="emoji">🥃</span>Alcools</button>
+    <button class="tab-btn" data-tab="alcools"><span class="emoji">🥃</span>Alcools</button>
     <button class="tab-btn" data-tab="aperitifs"><span class="emoji">🍹</span>Apéritifs</button>
     <button class="tab-btn" data-tab="bieres"><span class="emoji">🍻</span>Bières</button>
     <button class="tab-btn" data-tab="epicerie"><span class="emoji">🥘</span>Épicerie</button>
@@ -360,7 +379,7 @@
 <main>
 
 <!-- ========== VINS ========== -->
-<div class="panel" id="panel-vins">
+<div class="panel active" id="panel-vins">
   <div class="section-title">🍷 Vins</div>
   <div class="section-sub">Calcul des tarifs — Belgique &amp; France · TVA 21% / 20%</div>
 
@@ -390,104 +409,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.57 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.57 €<button class="copy-val-btn" onclick="copyVal(&#39;1.57 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.90 €<button class="copy-val-btn" onclick="copyVal(&#39;1.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.28 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.55 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.28 €<button class="copy-val-btn" onclick="copyVal(&#39;1.28 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.55 €<button class="copy-val-btn" onclick="copyVal(&#39;1.55 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.19 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.44 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.19 €<button class="copy-val-btn" onclick="copyVal(&#39;1.19 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.44 €<button class="copy-val-btn" onclick="copyVal(&#39;1.44 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.10 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.34 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.10 €<button class="copy-val-btn" onclick="copyVal(&#39;1.10 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.34 €<button class="copy-val-btn" onclick="copyVal(&#39;1.34 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.02 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.23 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.02 €<button class="copy-val-btn" onclick="copyVal(&#39;1.02 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.23 €<button class="copy-val-btn" onclick="copyVal(&#39;1.23 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €<button class="copy-val-btn" onclick="copyVal(&#39;0.37 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €<button class="copy-val-btn" onclick="copyVal(&#39;0.44 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.54 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.85 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.54 €<button class="copy-val-btn" onclick="copyVal(&#39;1.54 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.85 €<button class="copy-val-btn" onclick="copyVal(&#39;1.85 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €<button class="copy-val-btn" onclick="copyVal(&#39;0.75 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €<button class="copy-val-btn" onclick="copyVal(&#39;0.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.66 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.79 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.66 €<button class="copy-val-btn" onclick="copyVal(&#39;0.66 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.79 €<button class="copy-val-btn" onclick="copyVal(&#39;0.79 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.57 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.69 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.57 €<button class="copy-val-btn" onclick="copyVal(&#39;0.57 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.69 €<button class="copy-val-btn" onclick="copyVal(&#39;0.69 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.49 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.58 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.49 €<button class="copy-val-btn" onclick="copyVal(&#39;0.49 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.58 €<button class="copy-val-btn" onclick="copyVal(&#39;0.58 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €<button class="copy-val-btn" onclick="copyVal(&#39;0.32 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.57 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.58 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.57 €<button class="copy-val-btn" onclick="copyVal(&#39;1.57 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.58 €<button class="copy-val-btn" onclick="copyVal(&#39;2.58 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -498,104 +517,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €<button class="copy-val-btn" onclick="copyVal(&#39;0.99 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €<button class="copy-val-btn" onclick="copyVal(&#39;1.20 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €<button class="copy-val-btn" onclick="copyVal(&#39;0.99 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €<button class="copy-val-btn" onclick="copyVal(&#39;1.20 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.73 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.73 €<button class="copy-val-btn" onclick="copyVal(&#39;0.73 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €<button class="copy-val-btn" onclick="copyVal(&#39;0.88 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.70 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.85 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.70 €<button class="copy-val-btn" onclick="copyVal(&#39;0.70 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.85 €<button class="copy-val-btn" onclick="copyVal(&#39;0.85 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.65 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.78 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.65 €<button class="copy-val-btn" onclick="copyVal(&#39;0.65 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.78 €<button class="copy-val-btn" onclick="copyVal(&#39;0.78 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.03 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.96 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.15 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.96 €<button class="copy-val-btn" onclick="copyVal(&#39;0.96 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.15 €<button class="copy-val-btn" onclick="copyVal(&#39;1.15 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.46 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.46 €<button class="copy-val-btn" onclick="copyVal(&#39;0.46 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €<button class="copy-val-btn" onclick="copyVal(&#39;0.55 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.20 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.24 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.20 €<button class="copy-val-btn" onclick="copyVal(&#39;0.20 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.24 €<button class="copy-val-btn" onclick="copyVal(&#39;0.24 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.17 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.21 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.17 €<button class="copy-val-btn" onclick="copyVal(&#39;0.17 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.21 €<button class="copy-val-btn" onclick="copyVal(&#39;0.21 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.12 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.14 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.12 €<button class="copy-val-btn" onclick="copyVal(&#39;0.12 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.14 €<button class="copy-val-btn" onclick="copyVal(&#39;0.14 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.88 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.99 €<button class="copy-val-btn" onclick="copyVal(&#39;0.99 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.88 €<button class="copy-val-btn" onclick="copyVal(&#39;1.88 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -842,104 +861,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.23 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.70 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.23 €<button class="copy-val-btn" onclick="copyVal(&#39;2.23 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.70 €<button class="copy-val-btn" onclick="copyVal(&#39;2.70 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">3.25 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.93 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">3.25 €<button class="copy-val-btn" onclick="copyVal(&#39;3.25 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.93 €<button class="copy-val-btn" onclick="copyVal(&#39;3.93 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">3.03 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.66 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">3.03 €<button class="copy-val-btn" onclick="copyVal(&#39;3.03 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.66 €<button class="copy-val-btn" onclick="copyVal(&#39;3.66 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.80 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.39 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.80 €<button class="copy-val-btn" onclick="copyVal(&#39;2.80 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.39 €<button class="copy-val-btn" onclick="copyVal(&#39;3.39 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.58 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.12 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.58 €<button class="copy-val-btn" onclick="copyVal(&#39;2.58 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.12 €<button class="copy-val-btn" onclick="copyVal(&#39;3.12 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €<button class="copy-val-btn" onclick="copyVal(&#39;0.41 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €<button class="copy-val-btn" onclick="copyVal(&#39;0.49 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.25 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.70 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.25 €<button class="copy-val-btn" onclick="copyVal(&#39;2.25 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.70 €<button class="copy-val-btn" onclick="copyVal(&#39;2.70 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.41 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.69 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.41 €<button class="copy-val-btn" onclick="copyVal(&#39;1.41 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.69 €<button class="copy-val-btn" onclick="copyVal(&#39;1.69 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.18 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.42 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.18 €<button class="copy-val-btn" onclick="copyVal(&#39;1.18 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.42 €<button class="copy-val-btn" onclick="copyVal(&#39;1.42 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.96 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.15 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.96 €<button class="copy-val-btn" onclick="copyVal(&#39;0.96 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.15 €<button class="copy-val-btn" onclick="copyVal(&#39;1.15 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €<button class="copy-val-btn" onclick="copyVal(&#39;0.74 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €<button class="copy-val-btn" onclick="copyVal(&#39;0.88 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €<button class="copy-val-btn" onclick="copyVal(&#39;0.32 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">4.15 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">5.02 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">4.15 €<button class="copy-val-btn" onclick="copyVal(&#39;4.15 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">5.02 €<button class="copy-val-btn" onclick="copyVal(&#39;5.02 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -950,104 +969,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.89 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.89 €<button class="copy-val-btn" onclick="copyVal(&#39;2.89 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €<button class="copy-val-btn" onclick="copyVal(&#39;3.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.89 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.89 €<button class="copy-val-btn" onclick="copyVal(&#39;2.89 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €<button class="copy-val-btn" onclick="copyVal(&#39;3.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.50 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.02 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.50 €<button class="copy-val-btn" onclick="copyVal(&#39;2.50 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.02 €<button class="copy-val-btn" onclick="copyVal(&#39;3.02 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.40 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.40 €<button class="copy-val-btn" onclick="copyVal(&#39;2.40 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.90 €<button class="copy-val-btn" onclick="copyVal(&#39;2.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.21 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.67 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.21 €<button class="copy-val-btn" onclick="copyVal(&#39;2.21 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.67 €<button class="copy-val-btn" onclick="copyVal(&#39;2.67 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.07 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.09 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.07 €<button class="copy-val-btn" onclick="copyVal(&#39;0.07 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.09 €<button class="copy-val-btn" onclick="copyVal(&#39;0.09 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.92 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.92 €<button class="copy-val-btn" onclick="copyVal(&#39;2.92 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €<button class="copy-val-btn" onclick="copyVal(&#39;3.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.92 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.92 €<button class="copy-val-btn" onclick="copyVal(&#39;2.92 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">3.50 €<button class="copy-val-btn" onclick="copyVal(&#39;3.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.65 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.78 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.65 €<button class="copy-val-btn" onclick="copyVal(&#39;0.65 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.78 €<button class="copy-val-btn" onclick="copyVal(&#39;0.78 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.56 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.56 €<button class="copy-val-btn" onclick="copyVal(&#39;0.56 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €<button class="copy-val-btn" onclick="copyVal(&#39;0.67 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €<button class="copy-val-btn" onclick="copyVal(&#39;0.37 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €<button class="copy-val-btn" onclick="copyVal(&#39;0.44 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">4.81 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">5.82 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">4.81 €<button class="copy-val-btn" onclick="copyVal(&#39;4.81 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">5.82 €<button class="copy-val-btn" onclick="copyVal(&#39;5.82 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -1264,12 +1283,12 @@
 </div>
 
 <!-- ========== ALCOOLS ========== -->
-<div class="panel active" id="panel-alcools">
+<div class="panel" id="panel-alcools">
   <div class="section-title">🥃 Alcools</div>
   <div class="section-sub">Belgique &amp; Importation · TVA 21% / 20% · Accises sur degré alcool</div>
   <div class="dual-section">
     <div class="country-block">
-      <div class="ctry-title">🌍 Achats hors Belgique</div>
+      <div class="ctry-title">🇧🇪 Achats Belgique</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="al-be-cont" value="0.7" step="0.01" oninput="calcAlcools()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="al-be-px" value="0" step="0.01" oninput="calcAlcools()"></div>
@@ -1277,7 +1296,7 @@
       </div>
     </div>
     <div class="country-block">
-      <div class="ctry-title">📦 Importation</div>
+      <div class="ctry-title">🌍 Importation (achat France)</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="al-imp-cont" value="0.7" step="0.01" oninput="calcAlcools()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="al-imp-px" value="0" step="0.01" oninput="calcAlcools()"></div>
@@ -1294,104 +1313,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.35 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.10 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.35 €<button class="copy-val-btn" onclick="copyVal(&#39;8.35 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.10 €<button class="copy-val-btn" onclick="copyVal(&#39;10.10 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €<button class="copy-val-btn" onclick="copyVal(&#39;8.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €<button class="copy-val-btn" onclick="copyVal(&#39;10.14 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €<button class="copy-val-btn" onclick="copyVal(&#39;8.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €<button class="copy-val-btn" onclick="copyVal(&#39;10.14 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.38 €<button class="copy-val-btn" onclick="copyVal(&#39;8.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.14 €<button class="copy-val-btn" onclick="copyVal(&#39;10.14 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">9.98 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">12.08 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">9.98 €<button class="copy-val-btn" onclick="copyVal(&#39;9.98 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">12.08 €<button class="copy-val-btn" onclick="copyVal(&#39;12.08 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.46 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.96 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.46 €<button class="copy-val-btn" onclick="copyVal(&#39;7.46 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.96 €<button class="copy-val-btn" onclick="copyVal(&#39;8.96 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.17 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.60 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.17 €<button class="copy-val-btn" onclick="copyVal(&#39;7.17 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.60 €<button class="copy-val-btn" onclick="copyVal(&#39;8.60 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €<button class="copy-val-btn" onclick="copyVal(&#39;7.15 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €<button class="copy-val-btn" onclick="copyVal(&#39;8.58 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €<button class="copy-val-btn" onclick="copyVal(&#39;7.15 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €<button class="copy-val-btn" onclick="copyVal(&#39;8.58 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.15 €<button class="copy-val-btn" onclick="copyVal(&#39;7.15 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">8.58 €<button class="copy-val-btn" onclick="copyVal(&#39;8.58 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.75 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.75 €<button class="copy-val-btn" onclick="copyVal(&#39;8.75 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.50 €<button class="copy-val-btn" onclick="copyVal(&#39;10.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.30 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.36 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.30 €<button class="copy-val-btn" onclick="copyVal(&#39;0.30 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.36 €<button class="copy-val-btn" onclick="copyVal(&#39;0.36 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.35 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.10 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">8.35 €<button class="copy-val-btn" onclick="copyVal(&#39;8.35 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">10.10 €<button class="copy-val-btn" onclick="copyVal(&#39;10.10 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -1402,104 +1421,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €<button class="copy-val-btn" onclick="copyVal(&#39;1.16 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €<button class="copy-val-btn" onclick="copyVal(&#39;1.40 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.00 €<button class="copy-val-btn" onclick="copyVal(&#39;1.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.20 €<button class="copy-val-btn" onclick="copyVal(&#39;1.20 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.93 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.93 €<button class="copy-val-btn" onclick="copyVal(&#39;0.93 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €<button class="copy-val-btn" onclick="copyVal(&#39;1.13 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.87 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.05 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.87 €<button class="copy-val-btn" onclick="copyVal(&#39;0.87 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.05 €<button class="copy-val-btn" onclick="copyVal(&#39;1.05 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €<button class="copy-val-btn" onclick="copyVal(&#39;0.75 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €<button class="copy-val-btn" onclick="copyVal(&#39;0.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.80 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">9.36 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">7.80 €<button class="copy-val-btn" onclick="copyVal(&#39;7.80 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">9.36 €<button class="copy-val-btn" onclick="copyVal(&#39;9.36 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.08 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.10 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.08 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.08 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.10 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.10 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.24 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.28 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.24 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.24 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.28 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.28 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.30 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.36 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.30 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.30 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.36 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.36 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.36 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.43 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.36 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.36 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.43 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.43 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.49 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.58 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.49 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.49 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.58 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.58 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-7.76 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-9.31 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-7.76 €<button class="copy-val-btn" onclick="copyVal(&#39;-7.76 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-9.31 €<button class="copy-val-btn" onclick="copyVal(&#39;-9.31 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €<button class="copy-val-btn" onclick="copyVal(&#39;1.16 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €<button class="copy-val-btn" onclick="copyVal(&#39;1.40 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -1512,7 +1531,7 @@
   <div class="section-sub">Achats Belgique &amp; Importation · TVA 21% / 20%</div>
   <div class="dual-section">
     <div class="country-block">
-      <div class="ctry-title">🌍 Achats hors Belgique</div>
+      <div class="ctry-title">🇧🇪 Achats Belgique</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="ap-be-cont" value="0.75" step="0.01" oninput="calcAperitifs()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="ap-be-px" value="0" step="0.01" oninput="calcAperitifs()"></div>
@@ -1520,7 +1539,7 @@
       </div>
     </div>
     <div class="country-block">
-      <div class="ctry-title">📦 Importation</div>
+      <div class="ctry-title">🌍 Importation (monde)</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="ap-imp-cont" value="0.75" step="0.01" oninput="calcAperitifs()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="ap-imp-px" value="0" step="0.01" oninput="calcAperitifs()"></div>
@@ -1537,104 +1556,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €<button class="copy-val-btn" onclick="copyVal(&#39;1.95 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €<button class="copy-val-btn" onclick="copyVal(&#39;2.36 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €<button class="copy-val-btn" onclick="copyVal(&#39;1.95 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €<button class="copy-val-btn" onclick="copyVal(&#39;2.36 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €<button class="copy-val-btn" onclick="copyVal(&#39;1.95 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €<button class="copy-val-btn" onclick="copyVal(&#39;2.36 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.88 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.27 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.88 €<button class="copy-val-btn" onclick="copyVal(&#39;1.88 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.27 €<button class="copy-val-btn" onclick="copyVal(&#39;2.27 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.73 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.09 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.73 €<button class="copy-val-btn" onclick="copyVal(&#39;1.73 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.09 €<button class="copy-val-btn" onclick="copyVal(&#39;2.09 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.91 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.29 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.91 €<button class="copy-val-btn" onclick="copyVal(&#39;1.91 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.29 €<button class="copy-val-btn" onclick="copyVal(&#39;2.29 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €<button class="copy-val-btn" onclick="copyVal(&#39;0.42 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.50 €<button class="copy-val-btn" onclick="copyVal(&#39;0.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €<button class="copy-val-btn" onclick="copyVal(&#39;1.16 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €<button class="copy-val-btn" onclick="copyVal(&#39;1.40 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.16 €<button class="copy-val-btn" onclick="copyVal(&#39;1.16 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.40 €<button class="copy-val-btn" onclick="copyVal(&#39;1.40 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.09 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.31 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.09 €<button class="copy-val-btn" onclick="copyVal(&#39;1.09 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.31 €<button class="copy-val-btn" onclick="copyVal(&#39;1.31 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.94 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.94 €<button class="copy-val-btn" onclick="copyVal(&#39;0.94 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €<button class="copy-val-btn" onclick="copyVal(&#39;1.13 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €<button class="copy-val-btn" onclick="copyVal(&#39;0.32 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.95 €<button class="copy-val-btn" onclick="copyVal(&#39;1.95 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.36 €<button class="copy-val-btn" onclick="copyVal(&#39;2.36 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -1645,104 +1664,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.24 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.24 €<button class="copy-val-btn" onclick="copyVal(&#39;1.24 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €<button class="copy-val-btn" onclick="copyVal(&#39;1.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.07 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.29 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.07 €<button class="copy-val-btn" onclick="copyVal(&#39;1.07 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.29 €<button class="copy-val-btn" onclick="copyVal(&#39;1.29 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.21 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.00 €<button class="copy-val-btn" onclick="copyVal(&#39;1.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.21 €<button class="copy-val-btn" onclick="copyVal(&#39;1.21 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.93 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.93 €<button class="copy-val-btn" onclick="copyVal(&#39;0.93 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €<button class="copy-val-btn" onclick="copyVal(&#39;1.13 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.80 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.97 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.80 €<button class="copy-val-btn" onclick="copyVal(&#39;0.80 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.97 €<button class="copy-val-btn" onclick="copyVal(&#39;0.97 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.27 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.73 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">2.27 €<button class="copy-val-btn" onclick="copyVal(&#39;2.27 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">2.73 €<button class="copy-val-btn" onclick="copyVal(&#39;2.73 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.60 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.60 €<button class="copy-val-btn" onclick="copyVal(&#39;1.60 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.90 €<button class="copy-val-btn" onclick="copyVal(&#39;1.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.46 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.75 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.46 €<button class="copy-val-btn" onclick="copyVal(&#39;1.46 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.75 €<button class="copy-val-btn" onclick="copyVal(&#39;1.75 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.39 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.67 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.39 €<button class="copy-val-btn" onclick="copyVal(&#39;1.39 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.67 €<button class="copy-val-btn" onclick="copyVal(&#39;1.67 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.32 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.59 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.32 €<button class="copy-val-btn" onclick="copyVal(&#39;1.32 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.59 €<button class="copy-val-btn" onclick="copyVal(&#39;1.59 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.19 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.43 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.19 €<button class="copy-val-btn" onclick="copyVal(&#39;1.19 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.43 €<button class="copy-val-btn" onclick="copyVal(&#39;1.43 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.51 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.62 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.51 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.51 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.62 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.62 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.24 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.24 €<button class="copy-val-btn" onclick="copyVal(&#39;1.24 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €<button class="copy-val-btn" onclick="copyVal(&#39;1.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -1769,104 +1788,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €<button class="copy-val-btn" onclick="copyVal(&#39;0.46 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €<button class="copy-val-btn" onclick="copyVal(&#39;0.37 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €<button class="copy-val-btn" onclick="copyVal(&#39;0.45 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.36 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.36 €<button class="copy-val-btn" onclick="copyVal(&#39;0.36 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €<button class="copy-val-btn" onclick="copyVal(&#39;0.43 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €<button class="copy-val-btn" onclick="copyVal(&#39;0.34 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €<button class="copy-val-btn" onclick="copyVal(&#39;0.41 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.31 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.38 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.31 €<button class="copy-val-btn" onclick="copyVal(&#39;0.31 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.31 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.38 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.31 €<button class="copy-val-btn" onclick="copyVal(&#39;0.31 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €<button class="copy-val-btn" onclick="copyVal(&#39;0.45 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €<button class="copy-val-btn" onclick="copyVal(&#39;0.41 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €<button class="copy-val-btn" onclick="copyVal(&#39;0.49 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €<button class="copy-val-btn" onclick="copyVal(&#39;0.47 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €<button class="copy-val-btn" onclick="copyVal(&#39;0.46 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.42 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €<button class="copy-val-btn" onclick="copyVal(&#39;0.35 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.42 €<button class="copy-val-btn" onclick="copyVal(&#39;0.42 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.14 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.17 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.14 €<button class="copy-val-btn" onclick="copyVal(&#39;0.14 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.17 €<button class="copy-val-btn" onclick="copyVal(&#39;0.17 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €<button class="copy-val-btn" onclick="copyVal(&#39;0.46 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
 </div>
@@ -1889,104 +1908,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.51 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €<button class="copy-val-btn" onclick="copyVal(&#39;0.42 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.51 €<button class="copy-val-btn" onclick="copyVal(&#39;0.51 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €<button class="copy-val-btn" onclick="copyVal(&#39;0.46 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €<button class="copy-val-btn" onclick="copyVal(&#39;0.37 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €<button class="copy-val-btn" onclick="copyVal(&#39;0.44 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €<button class="copy-val-btn" onclick="copyVal(&#39;0.35 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €<button class="copy-val-btn" onclick="copyVal(&#39;0.43 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €<button class="copy-val-btn" onclick="copyVal(&#39;0.32 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.29 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.35 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.29 €<button class="copy-val-btn" onclick="copyVal(&#39;0.29 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.35 €<button class="copy-val-btn" onclick="copyVal(&#39;0.35 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.52 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.52 €<button class="copy-val-btn" onclick="copyVal(&#39;0.52 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €<button class="copy-val-btn" onclick="copyVal(&#39;0.55 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.40 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.48 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.40 €<button class="copy-val-btn" onclick="copyVal(&#39;0.40 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.48 €<button class="copy-val-btn" onclick="copyVal(&#39;0.48 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €<button class="copy-val-btn" onclick="copyVal(&#39;0.46 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.37 €<button class="copy-val-btn" onclick="copyVal(&#39;0.37 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.44 €<button class="copy-val-btn" onclick="copyVal(&#39;0.44 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €<button class="copy-val-btn" onclick="copyVal(&#39;0.34 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €<button class="copy-val-btn" onclick="copyVal(&#39;0.41 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.28 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.34 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.28 €<button class="copy-val-btn" onclick="copyVal(&#39;0.28 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.34 €<button class="copy-val-btn" onclick="copyVal(&#39;0.34 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.91 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.11 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.91 €<button class="copy-val-btn" onclick="copyVal(&#39;0.91 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.11 €<button class="copy-val-btn" onclick="copyVal(&#39;1.11 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
 </div>
@@ -2020,104 +2039,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.91 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.10 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.91 €<button class="copy-val-btn" onclick="copyVal(&#39;0.91 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.10 €<button class="copy-val-btn" onclick="copyVal(&#39;1.10 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.73 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.73 €<button class="copy-val-btn" onclick="copyVal(&#39;0.73 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.88 €<button class="copy-val-btn" onclick="copyVal(&#39;0.88 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.68 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.82 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.68 €<button class="copy-val-btn" onclick="copyVal(&#39;0.68 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.82 €<button class="copy-val-btn" onclick="copyVal(&#39;0.82 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.63 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.76 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.63 €<button class="copy-val-btn" onclick="copyVal(&#39;0.63 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.76 €<button class="copy-val-btn" onclick="copyVal(&#39;0.76 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.58 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.58 €<button class="copy-val-btn" onclick="copyVal(&#39;0.58 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €<button class="copy-val-btn" onclick="copyVal(&#39;0.70 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.34 €<button class="copy-val-btn" onclick="copyVal(&#39;0.34 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.41 €<button class="copy-val-btn" onclick="copyVal(&#39;0.41 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €<button class="copy-val-btn" onclick="copyVal(&#39;0.75 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €<button class="copy-val-btn" onclick="copyVal(&#39;0.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.56 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.56 €<button class="copy-val-btn" onclick="copyVal(&#39;0.56 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €<button class="copy-val-btn" onclick="copyVal(&#39;0.67 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.51 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.61 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.51 €<button class="copy-val-btn" onclick="copyVal(&#39;0.51 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.61 €<button class="copy-val-btn" onclick="copyVal(&#39;0.61 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.46 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.46 €<button class="copy-val-btn" onclick="copyVal(&#39;0.46 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €<button class="copy-val-btn" onclick="copyVal(&#39;0.55 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €<button class="copy-val-btn" onclick="copyVal(&#39;0.41 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €<button class="copy-val-btn" onclick="copyVal(&#39;0.49 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.32 €<button class="copy-val-btn" onclick="copyVal(&#39;0.32 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.90 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.09 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.90 €<button class="copy-val-btn" onclick="copyVal(&#39;0.90 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.09 €<button class="copy-val-btn" onclick="copyVal(&#39;1.09 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -2128,104 +2147,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.49 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.80 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.49 €<button class="copy-val-btn" onclick="copyVal(&#39;1.49 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.80 €<button class="copy-val-btn" onclick="copyVal(&#39;1.80 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.25 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.51 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.25 €<button class="copy-val-btn" onclick="copyVal(&#39;1.25 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.51 €<button class="copy-val-btn" onclick="copyVal(&#39;1.51 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.18 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.43 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.18 €<button class="copy-val-btn" onclick="copyVal(&#39;1.18 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.43 €<button class="copy-val-btn" onclick="copyVal(&#39;1.43 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.11 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.35 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.11 €<button class="copy-val-btn" onclick="copyVal(&#39;1.11 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.35 €<button class="copy-val-btn" onclick="copyVal(&#39;1.35 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.98 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.19 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.98 €<button class="copy-val-btn" onclick="copyVal(&#39;0.98 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.19 €<button class="copy-val-btn" onclick="copyVal(&#39;1.19 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.18 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.22 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.18 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.18 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.22 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.22 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.25 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.25 €<button class="copy-val-btn" onclick="copyVal(&#39;1.25 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.50 €<button class="copy-val-btn" onclick="copyVal(&#39;1.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.08 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.29 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.08 €<button class="copy-val-btn" onclick="copyVal(&#39;1.08 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.29 €<button class="copy-val-btn" onclick="copyVal(&#39;1.29 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.01 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.21 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.01 €<button class="copy-val-btn" onclick="copyVal(&#39;1.01 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.21 €<button class="copy-val-btn" onclick="copyVal(&#39;1.21 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.94 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.94 €<button class="copy-val-btn" onclick="copyVal(&#39;0.94 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.13 €<button class="copy-val-btn" onclick="copyVal(&#39;1.13 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.81 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.97 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.81 €<button class="copy-val-btn" onclick="copyVal(&#39;0.81 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.97 €<button class="copy-val-btn" onclick="copyVal(&#39;0.97 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.18 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.22 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.18 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.18 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.22 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.22 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.49 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.80 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">1.49 €<button class="copy-val-btn" onclick="copyVal(&#39;1.49 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">1.80 €<button class="copy-val-btn" onclick="copyVal(&#39;1.80 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -2261,104 +2280,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.66 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.66 €<button class="copy-val-btn" onclick="copyVal(&#39;0.66 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €<button class="copy-val-btn" onclick="copyVal(&#39;0.70 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.44 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.54 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.44 €<button class="copy-val-btn" onclick="copyVal(&#39;0.44 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.54 €<button class="copy-val-btn" onclick="copyVal(&#39;0.54 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.50 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €<button class="copy-val-btn" onclick="copyVal(&#39;0.41 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.50 €<button class="copy-val-btn" onclick="copyVal(&#39;0.50 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.46 €<button class="copy-val-btn" onclick="copyVal(&#39;0.46 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.35 €<button class="copy-val-btn" onclick="copyVal(&#39;0.35 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €<button class="copy-val-btn" onclick="copyVal(&#39;0.43 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.29 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.35 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.29 €<button class="copy-val-btn" onclick="copyVal(&#39;0.29 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.35 €<button class="copy-val-btn" onclick="copyVal(&#39;0.35 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.52 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.52 €<button class="copy-val-btn" onclick="copyVal(&#39;0.52 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.55 €<button class="copy-val-btn" onclick="copyVal(&#39;0.55 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.51 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.42 €<button class="copy-val-btn" onclick="copyVal(&#39;0.42 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.51 €<button class="copy-val-btn" onclick="copyVal(&#39;0.51 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €<button class="copy-val-btn" onclick="copyVal(&#39;0.47 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.36 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.36 €<button class="copy-val-btn" onclick="copyVal(&#39;0.36 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.43 €<button class="copy-val-btn" onclick="copyVal(&#39;0.43 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.33 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.33 €<button class="copy-val-btn" onclick="copyVal(&#39;0.33 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.28 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.34 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.28 €<button class="copy-val-btn" onclick="copyVal(&#39;0.28 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.34 €<button class="copy-val-btn" onclick="copyVal(&#39;0.34 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.55 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.55 €<button class="copy-val-btn" onclick="copyVal(&#39;0.55 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.67 €<button class="copy-val-btn" onclick="copyVal(&#39;0.67 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -2369,104 +2388,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.09 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.10 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.09 €<button class="copy-val-btn" onclick="copyVal(&#39;0.09 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.10 €<button class="copy-val-btn" onclick="copyVal(&#39;0.10 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.08 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.10 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.08 €<button class="copy-val-btn" onclick="copyVal(&#39;0.08 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.10 €<button class="copy-val-btn" onclick="copyVal(&#39;0.10 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €<button class="copy-val-btn" onclick="copyVal(&#39;0.04 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €<button class="copy-val-btn" onclick="copyVal(&#39;0.04 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.03 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">-0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">-0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;-0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.05 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.05 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.05 €<button class="copy-val-btn" onclick="copyVal(&#39;0.05 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.05 €<button class="copy-val-btn" onclick="copyVal(&#39;0.05 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.06 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.07 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.06 €<button class="copy-val-btn" onclick="copyVal(&#39;0.06 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.07 €<button class="copy-val-btn" onclick="copyVal(&#39;0.07 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.01 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.01 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.01 €<button class="copy-val-btn" onclick="copyVal(&#39;0.01 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.01 €<button class="copy-val-btn" onclick="copyVal(&#39;0.01 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.01 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.01 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.01 €<button class="copy-val-btn" onclick="copyVal(&#39;0.01 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.01 €<button class="copy-val-btn" onclick="copyVal(&#39;0.01 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.11 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.13 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.11 €<button class="copy-val-btn" onclick="copyVal(&#39;0.11 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.13 €<button class="copy-val-btn" onclick="copyVal(&#39;0.13 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -2487,7 +2506,7 @@
       </div>
     </div>
     <div class="country-block">
-      <div class="ctry-title">📦 Importation</div>
+      <div class="ctry-title">🇧🇪 Achats Belgique</div>
       <div class="grid-inputs">
         <div class="input-group"><label>Contenance (L)</label><input type="number" id="ana-imp-cont" value="0.5" step="0.01" oninput="calcAlcoolsNA()"></div>
         <div class="input-group"><label>Prix d'achat (€)</label><input type="number" id="ana-imp-px" value="0" step="0.01" oninput="calcAlcoolsNA()"></div>
@@ -2504,104 +2523,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €<button class="copy-val-btn" onclick="copyVal(&#39;0.04 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €<button class="copy-val-btn" onclick="copyVal(&#39;0.04 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.03 €<button class="copy-val-btn" onclick="copyVal(&#39;0.03 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.04 €<button class="copy-val-btn" onclick="copyVal(&#39;0.04 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.57 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €<button class="copy-val-btn" onclick="copyVal(&#39;0.47 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.57 €<button class="copy-val-btn" onclick="copyVal(&#39;0.57 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.40 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.40 €<button class="copy-val-btn" onclick="copyVal(&#39;0.40 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €<button class="copy-val-btn" onclick="copyVal(&#39;0.47 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.54 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.65 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.54 €<button class="copy-val-btn" onclick="copyVal(&#39;0.54 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.65 €<button class="copy-val-btn" onclick="copyVal(&#39;0.65 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.44 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.53 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.44 €<button class="copy-val-btn" onclick="copyVal(&#39;0.44 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.53 €<button class="copy-val-btn" onclick="copyVal(&#39;0.53 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.38 €<button class="copy-val-btn" onclick="copyVal(&#39;0.38 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.45 €<button class="copy-val-btn" onclick="copyVal(&#39;0.45 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.00 €<button class="copy-val-btn" onclick="copyVal(&#39;0.00 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -2612,104 +2631,104 @@
       <div class="result-badge">4</div>
       <div class="result-label">PV PART</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €<button class="copy-val-btn" onclick="copyVal(&#39;0.74 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €<button class="copy-val-btn" onclick="copyVal(&#39;0.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">5</div>
       <div class="result-label">PV HORECA</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.62 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.75 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.62 €<button class="copy-val-btn" onclick="copyVal(&#39;0.62 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.75 €<button class="copy-val-btn" onclick="copyVal(&#39;0.75 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">6</div>
       <div class="result-label">PV GROS 1</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.58 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.71 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.58 €<button class="copy-val-btn" onclick="copyVal(&#39;0.58 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.71 €<button class="copy-val-btn" onclick="copyVal(&#39;0.71 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">7</div>
       <div class="result-label">PV GROS 2</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.54 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.66 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.54 €<button class="copy-val-btn" onclick="copyVal(&#39;0.54 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.66 €<button class="copy-val-btn" onclick="copyVal(&#39;0.66 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">8</div>
       <div class="result-label">COURTAGE</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.57 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €<button class="copy-val-btn" onclick="copyVal(&#39;0.47 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.57 €<button class="copy-val-btn" onclick="copyVal(&#39;0.57 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">9</div>
       <div class="result-label">PA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.41 €<button class="copy-val-btn" onclick="copyVal(&#39;0.41 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.49 €<button class="copy-val-btn" onclick="copyVal(&#39;0.49 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">10</div>
       <div class="result-label">PV PART France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.75 €<button class="copy-val-btn" onclick="copyVal(&#39;0.75 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €<button class="copy-val-btn" onclick="copyVal(&#39;0.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">11</div>
       <div class="result-label">PV HORECA France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.62 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.75 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.62 €<button class="copy-val-btn" onclick="copyVal(&#39;0.62 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.75 €<button class="copy-val-btn" onclick="copyVal(&#39;0.75 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">12</div>
       <div class="result-label">PV GROS 1 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.59 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.59 €<button class="copy-val-btn" onclick="copyVal(&#39;0.59 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.70 €<button class="copy-val-btn" onclick="copyVal(&#39;0.70 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">13</div>
       <div class="result-label">PV GROS 2 France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.55 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.66 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.55 €<button class="copy-val-btn" onclick="copyVal(&#39;0.55 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.66 €<button class="copy-val-btn" onclick="copyVal(&#39;0.66 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">14</div>
       <div class="result-label">PV COURTAGE France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.56 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.47 €<button class="copy-val-btn" onclick="copyVal(&#39;0.47 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.56 €<button class="copy-val-btn" onclick="copyVal(&#39;0.56 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">15</div>
       <div class="result-label">PV BRUNIN France</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.39 €<button class="copy-val-btn" onclick="copyVal(&#39;0.39 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.47 €<button class="copy-val-btn" onclick="copyVal(&#39;0.47 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div>
     <div class="result-row">
       <div class="result-badge">16</div>
       <div class="result-label">PV INTERNET</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">0.74 €<button class="copy-val-btn" onclick="copyVal(&#39;0.74 €&#39;,this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">0.90 €<button class="copy-val-btn" onclick="copyVal(&#39;0.90 €&#39;,this)" title="Copier">⧉</button></div></div>
       </div>
     </div></div>
     </div>
@@ -2753,8 +2772,8 @@ function renderResults(containerId, rows, infoId, infoPills) {
       <div class="result-badge">${r.id}</div>
       <div class="result-label">${r.label}</div>
       <div class="result-vals">
-        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">${fmt(htva)}</div></div>
-        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">${fmt(r.tvac)}</div></div>
+        <div class="val-col"><div class="val-label">HTVA</div><div class="val-num">${fmt(htva)}<button class="copy-val-btn" onclick="copyVal('${fmt(htva)}',this)" title="Copier">⧉</button></div></div>
+        <div class="val-col"><div class="val-label">TVA C</div><div class="val-num tvac">${fmt(r.tvac)}<button class="copy-val-btn" onclick="copyVal('${fmt(r.tvac)}',this)" title="Copier">⧉</button></div></div>
       </div>
     </div>`;
   }).join('');
@@ -3803,6 +3822,19 @@ function toggleMagnum(type) {
     sec.classList.remove('visible');
     toggle.classList.remove('checked');
   }
+}
+
+function copyVal(val, btn) {
+  // Strip non-numeric except dot/comma, normalize comma to dot
+  const num = val.replace(/[^0-9,.]/g, '').replace(',', '.');
+  navigator.clipboard.writeText(num).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = num; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+  });
+  const orig = btn.textContent;
+  btn.textContent = '✓'; btn.classList.add('copied');
+  setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1200);
 }
 
 // Init all
