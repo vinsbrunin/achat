@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0063)file:///Users/julienbrunin/Downloads/calculateur_tarifs_20.html -->
+<!-- saved from url=(0063)file:///Users/julienbrunin/Downloads/calculateur_tarifs_22.html -->
 <html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,20 @@
 <link href="./index_files/css2" rel="stylesheet">
 <style>
   :root {
-    --bg: #0f0e0b;
-    --surface: #1a1915;
-    --surface2: #232118;
-    --border: #2e2c25;
-    --gold: #c9a84c;
-    --gold-light: #e8c97a;
-    --gold-dim: #7a6530;
-    --text: #f0ead8;
-    --text-dim: #8a8372;
-    --text-muted: #4a4840;
-    --green: #5a9e6f;
-    --red: #c0513a;
-    --blue: #4a7fa8;
-    --accent: #d4a847;
+    --bg: #ffffff;
+    --surface: #f4f4f2;
+    --surface2: #e8e8e4;
+    --border: #d0cfc8;
+    --gold: #8a6a1a;
+    --gold-light: #6a4e10;
+    --gold-dim: #b08a3a;
+    --text: #1a1a18;
+    --text-dim: #5a5850;
+    --text-muted: #9a9890;
+    --green: #2e7d46;
+    --red: #b03020;
+    --blue: #2a5f88;
+    --accent: #8a6a1a;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -30,9 +30,7 @@
     color: var(--text);
     font-family: 'DM Sans', sans-serif;
     min-height: 100vh;
-    background-image: 
-      radial-gradient(ellipse at 10% 20%, rgba(201,168,76,0.04) 0%, transparent 50%),
-      radial-gradient(ellipse at 90% 80%, rgba(201,168,76,0.03) 0%, transparent 50%);
+    background-image: none;
   }
 
   header {
@@ -41,7 +39,7 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    background: rgba(26,25,21,0.8);
+    background: rgba(255,255,255,0.92);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
@@ -364,9 +362,9 @@
 <header>
   <div class="logo">Tarifs<span>Calculateur de prix</span></div>
   <nav id="mainNav">
-    <button class="tab-btn" data-tab="vins"><span class="emoji">🍷</span>Vins</button>
+    <button class="tab-btn active" data-tab="vins"><span class="emoji">🍷</span>Vins</button>
     <button class="tab-btn" data-tab="mousseux"><span class="emoji">🍾</span>Mousseux</button>
-    <button class="tab-btn active" data-tab="alcools"><span class="emoji">🥃</span>Alcools</button>
+    <button class="tab-btn" data-tab="alcools"><span class="emoji">🥃</span>Alcools</button>
     <button class="tab-btn" data-tab="aperitifs"><span class="emoji">🍹</span>Apéritifs</button>
     <button class="tab-btn" data-tab="bieres"><span class="emoji">🍻</span>Bières</button>
     <button class="tab-btn" data-tab="epicerie"><span class="emoji">🥘</span>Épicerie</button>
@@ -379,7 +377,7 @@
 <main>
 
 <!-- ========== VINS ========== -->
-<div class="panel" id="panel-vins">
+<div class="panel active" id="panel-vins">
   <div class="section-title">🍷 Vins</div>
   <div class="section-sub">Calcul des tarifs — Belgique &amp; France · TVA 21% / 20%</div>
 
@@ -1283,7 +1281,7 @@
 </div>
 
 <!-- ========== ALCOOLS ========== -->
-<div class="panel active" id="panel-alcools">
+<div class="panel" id="panel-alcools">
   <div class="section-title">🥃 Alcools</div>
   <div class="section-sub">Belgique &amp; Importation · TVA 21% / 20% · Accises sur degré alcool</div>
   <div class="dual-section">
